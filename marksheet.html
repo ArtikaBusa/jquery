@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mark-sheet</title>
+		<meta name="keywords" content="HTML,CSS">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+		<script type="text/javascript" src="assets/jquery/custom.js"></script>
+	</head>
+	<body>
+		<button type="button" id="small">Small size</button>
+		<button type="button" id="medium">Medium size</button>
+		<button type="button" id="large">Large size</button>
+		<br>
+		<!-- <button type="button" id="red">Red</button>
+		<button type="button" id="blue">Blue</button>
+		<button type="button" id="yellow">Yellow</button> -->
+			<center>
+			<div id="border">
+				<h1 class="title">
+					<img src="assets\img\old-school.png" alt="school img">Aashadeep Science School</img>
+				</h1>
+				<table id="info">
+					<tbody>
+						<tr>
+							<th>Class:</th>
+								<td>8th</td>
+						  <th>Date:</th>
+								<td>03/07/2018</td>
+						</tr>
+						<tr>
+							<th>Teacher:</th>
+								<td>meera desai</td>
+							<th>Time:</th>
+								<td>9Am</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<hr width="50%" >
+				<br>
+				<button type="button" class="add" style="margin:8px">Add new record</button>
+				<button type="button" class="remove">Remove action</button>
+				<br>
+				<table class="marksheet" id="record" border="2" cellpadding="10" cellspacing="10">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Name</th>
+							<th>English</th>
+							<th>Gujrati</th>
+							<th>Hindi</th>
+							<th>Total</th>
+							<th>Percentage</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td align="center">1</td>
+							<td align="left"><input type="text" name="name_1" value="" /></td>
+							<td align="right"><input type="text" id="english_1"  name="english_1"  	value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><input type="text" id="gujarati_1" name="gujarati_1" 	value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><input type="text" id="hindi_1"    name="hindi_1" 		value="" data-id="1" class = 'sum' /></td>
+							<td align="right"><output id="total_1"   class="total"></output></td>
+							<td align="right"><output id="average_1" class="average"></output></td>
+						</tr>
+						<tr>
+							<td align="center">2</td>
+							<td align="left"><input type="text" name="name_2" value="" /></td>
+							<td align="right"><input type="text" id="english_2"  name="english_2" 	value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><input type="text" id="gujarati_2" name="gujarati_2" 	value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><input type="text" id="hindi_2"    name="hindi_2" 		value="" data-id="2" class = 'sum'/></td>
+							<td align="right"><output id="total_2"   class="total"></output></td>
+							<td align="right"><output id="average_2" class="average"></output></td>
+						</tr>
+						<tr>
+							<td align="center">3</td>
+							<td align="left"><input type="text" name="name_3" value="" /></td>
+							<td align="right"><input type="text" id="english_3"  name="english_3" 	value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><input type="text" id="gujarati_3" name="gujarati_3" 	value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><input type="text" id="hindi_3"    name="hindi_3" 		value="" data-id="3" class = 'sum'/></td>
+							<td align="right"><output id="total_3"   class="total"></output></td>
+							<td align="right"><output id="average_3" class="average"></output></td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<hr width="50%">
+				<br>
+				<footer>
+					<table id="footer">
+						<tbody>
+							<tr>
+								<th>Total No. of Student:</th>
+								<td><output id="no_of_student">3</output></td>
+							</tr>
+							<tr>
+								<th>Total marks:</th>
+								<td><output id="total">0</output></td>
+							</tr>
+							<tr>
+								<th>Average marks:</th>
+								<td><output id="average">0</output></td>
+							</tr>
+							<tr>
+								<th>Highest marks:</th>
+								<td><output id="max">0</output></td>
+							</tr>
+							<tr>
+								<th>Lowest marks:</th>
+								<td><output id="min">0</output></td>
+							</tr>
+						</tbody>
+					<table>
+				</footer>
+			</div>
+			</center>
+	</body>
+</html>
